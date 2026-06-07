@@ -30,8 +30,17 @@ print(df)
 # Exportación de dataset limpio
 # =========================
 
+# 1. Creamos un objeto Path con la ruta de destino
+output_file = Path("output/dataset_limpio.csv")
+
+# 2. Creamos la carpeta 'output' si no existe (parents=True permite crear subcarpetas)
+output_file.parent.mkdir(parents=True, exist_ok=True)
+
+# 3. Crea una fila del encabezado
 df.columns = df.columns.str.strip().str.lower()
-df.to_csv("output/dataset_limpio.csv", sep=",",index = False)
+
+# 4. Crea el archivo de salida
+df.to_csv(output_file, sep=",", index=False)
 
 print("Archivo exportado correctamente")
 
