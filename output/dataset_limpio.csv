@@ -1,5 +1,5 @@
-id;nombre;edad;ciudad
-1;Ana;25;Lima
-2;Carlos;30;Arequipa
-3;Ana;25;Lima
-4;Pedro;;Cusco
+id,nombre,edad,ciudad
+1,Ana,25.0,Lima
+2,Carlos,30.0,Arequipa
+3,Ana,25.0,Lima
+4,Pedro,0.0,Cusco
