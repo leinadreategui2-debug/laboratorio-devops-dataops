@@ -38,7 +38,7 @@ print("Archivo exportado correctamente")
 
 conn = psycopg.connect(
     host="localhost",
-    port="5432",    
+    port="5433",    
     dbname="laboratorio",
     user="postgres",
     password="12345678"
