@@ -1,11 +1,14 @@
-﻿import pandas as pd 
+﻿from pathlib import Path
+import pandas as pd
 import psycopg 
 
 # =========================
 # Lectura del dataset 
 # =========================
 
-df = pd.read_csv("data/dataset.csv",sep=";")
+csv_file = Path(__file__).resolve().parent.parent / "data" / "dataset.csv"
+
+df = pd.read_csv(csv_file, sep=";")
 
 print("Dataset original")
 print(df)
